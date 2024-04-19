@@ -28,6 +28,3 @@ source ~/.zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 # openjdk
 export PATH="/opt/homebrew/opt/openjdk/bin:$PATH"
-
-# postgres@16
-export PATH="/opt/homebrew/opt/postgresql@16/bin:$PATH"
