@@ -3,3 +3,6 @@
 
 # file system
 .DS_Store
+
+# local sensitive files
+raspberrypi/user-data
