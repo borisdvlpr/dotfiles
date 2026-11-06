@@ -1,0 +1,6 @@
+[tools]
+go = "latest"
+java = "lts"
+
+[settings]
+java.shorthand_vendor = "corretto"
