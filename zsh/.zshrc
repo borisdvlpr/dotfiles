@@ -62,17 +62,6 @@ PS1='%F{254}%n@%m%f %F{153}%(5~|%-1~/⋯/%3~|%4~) ${vcs_info_msg_0_}$(parse_git_
 #---------------------------
 # Tools Configuration
 #---------------------------
-# go
-# export PATH=${PATH}:${HOME}/go/bin
-
-# java
-export JAVA_HOME=/usr/lib/jvm/java-25-openjdk
-export PATH=${PATH}:${JAVA_HOME}/bin
-
-# node
-# export NVM_DIR="$HOME/.nvm"
-# [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"			# this loads nvm
-# [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"	# this loads nvm bash_completion
 
 # mise
 eval "$(/home/boris/.local/bin/mise activate zsh)"
