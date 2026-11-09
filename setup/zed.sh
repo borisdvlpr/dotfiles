@@ -9,4 +9,4 @@ else
   curl -fsSL https://zed.dev/install.sh | sh
 fi
 
-link zed/settings.json "$HOME/.config/zed/settings.json"
+link config/zed/settings.json "$HOME/.config/zed/settings.json"

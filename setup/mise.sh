@@ -11,7 +11,7 @@ else
   curl -fsSL https://mise.run | sh
 fi
 
-link mise/global.toml "$HOME/.config/mise/config.toml"
+link config/mise/global.toml "$HOME/.config/mise/config.toml"
 
 # Run from $HOME so no project config in the current directory applies.
 cd "$HOME"

@@ -1,3 +1,2 @@
 # sudo nano /boot/firmware/config.txt
 dtoverlay=gpio-fan,gpiopin=14,temp=80000
-

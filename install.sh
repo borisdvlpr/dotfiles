@@ -15,5 +15,5 @@ done
 
 if ! grep -qs 'mise activate' "$HOME/.zshrc"; then
   echo "note: ~/.zshrc does not activate mise, so its tools and JAVA_HOME are missing in new shells."
-  echo "      Deploy zsh/.zshrc, or add: eval \"\$(\$HOME/.local/bin/mise activate zsh)\""
+  echo "      Deploy config/zsh/.zshrc, or add: eval \"\$(\$HOME/.local/bin/mise activate zsh)\""
 fi
