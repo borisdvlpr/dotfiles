@@ -7,8 +7,9 @@ cd "${0:A:h}"
 
 [ "$(id -u)" -ne 0 ] || { echo "Do not run as root" >&2; exit 1; }
 command -v curl >/dev/null || { echo "curl is required" >&2; exit 1; }
+command -v git >/dev/null || { echo "git is required" >&2; exit 1; }
 
-STEPS=(mise zed)   # explicit allowlist, run in this order
+STEPS=(mise zed zsh-plugins)   # explicit allowlist, run in this order
 
 for step in "${STEPS[@]}"; do
   echo "==> $step"

@@ -3,7 +3,7 @@
 DOTFILES="${0:A:h:h}"
 
 # link <path in repo> <target>
-# Symlinks target to the repo file. A correct link is left alone; anything
+# symlinks target to the repo file. a correct link is left alone; anything
 # else already at target is moved to <target>.bak.<timestamp>, never deleted.
 link() {
   local src="$DOTFILES/$1" dst="$2"
