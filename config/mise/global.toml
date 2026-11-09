@@ -1,4 +1,5 @@
 [tools]
+fzf = "latest"
 go = "latest"
 java = "lts"
 
