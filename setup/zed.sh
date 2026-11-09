@@ -1,7 +1,8 @@
-#!/usr/bin/env bash
-# Step: install Zed, link its settings.
+#!/usr/bin/env zsh
+
+# step: install Zed, link its settings
 set -euo pipefail
-source "$(dirname "${BASH_SOURCE[0]}")/lib.sh"
+source "${0:A:h}/lib.sh"
 
 if [ -x "$HOME/.local/bin/zed" ]; then
   echo "ok      zed already installed"

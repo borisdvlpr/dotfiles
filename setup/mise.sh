@@ -1,7 +1,8 @@
-#!/usr/bin/env bash
-# Step: install mise, link the global config, install its tools.
+#!/usr/bin/env zsh
+
+# step: install mise, link the global config, install its tools
 set -euo pipefail
-source "$(dirname "${BASH_SOURCE[0]}")/lib.sh"
+source "${0:A:h}/lib.sh"
 
 MISE="$HOME/.local/bin/mise"
 

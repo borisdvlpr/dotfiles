@@ -1,7 +1,6 @@
 #!/usr/bin/env zsh
 
-set -e
-set -o pipefail
+set -euo pipefail
 
 # switch this to eap if you require the early access version
 RELEASE_TYPE=release

@@ -1,6 +1,6 @@
-# Shared helpers for setup steps. Source this file; do not run it.
+# shared helpers for setup steps. source this file; do not run it
 
-DOTFILES="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd -P)"
+DOTFILES="${0:A:h:h}"
 
 # link <path in repo> <target>
 # Symlinks target to the repo file. A correct link is left alone; anything

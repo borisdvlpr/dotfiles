@@ -1,7 +1,9 @@
-#!/usr/bin/env bash
-# Entry point: runs each setup step in order. Safe to re-run.
+#!/usr/bin/env zsh
+
+# entry point: runs each setup step in order. safe to re-run
 set -euo pipefail
-cd "$(dirname "$(readlink -f "$0")")"
+
+cd "${0:A:h}"
 
 [ "$(id -u)" -ne 0 ] || { echo "Do not run as root" >&2; exit 1; }
 command -v curl >/dev/null || { echo "curl is required" >&2; exit 1; }
@@ -10,7 +12,7 @@ STEPS=(mise zed)   # explicit allowlist, run in this order
 
 for step in "${STEPS[@]}"; do
   echo "==> $step"
-  bash "setup/$step.sh" || { echo "FAILED: $step. Fix it and re-run." >&2; exit 1; }
+  zsh "setup/$step.sh" || { echo "FAILED: $step. Fix it and re-run." >&2; exit 1; }
 done
 
 if ! grep -qs 'mise activate' "$HOME/.zshrc"; then
