@@ -2,6 +2,7 @@
 fzf = "latest"
 go = "latest"
 java = "lts"
+task = "latest"
 
 [settings]
 java.shorthand_vendor = "corretto"
